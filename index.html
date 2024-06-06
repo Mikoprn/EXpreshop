@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7500d1" />
+    <meta
+      name="description"
+      content="Hai, hello there my georgeous client! Hope you been well and healty :D "
+    />
+    <meta
+      name="keywords"
+      content="Expreshop online store website, online shop"
+    />
+    <meta name="author" content="Miko" />
+    <link rel="icon" type="image/png" href="#" />
+    <title>EXPRESHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        aria-label="wrapper content"
+        class="wrapper-section nav flex-between-center"
+      >
+        <a href="index.html" class="logo">EXpreshop</a>
+
+        <menu class="nav__menu flex-between-center">
+          <li class="nav__item">
+            <a href="#showcase" class="nav__link">new</a>
+          </li>
+          <li class="nav__item">
+            <a href="#collection" class="nav__link">collection</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">about</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">contact</a>
+          </li>
+        </menu>
+
+        <div class="nav__extra flex-between-center">
+          <button class="themes theme__button">
+            <img
+              src="./images/sun-white.svg"
+              alt="themes"
+              title="Themes switch"
+            />
+          </button>
+
+          <button class="cart-button">
+            <img src="./images/cart.svg" alt="cart" title="Cart" />
+          </button>
+          <div class="modal-cart" id="cart">
+            <div class="cart-wrapper">
+              <button class="cart-close-button">
+                <img src="./images/close.svg" alt="close" title="Close" />
+              </button>
+
+              <article class="cart-description">
+                <h4 id="cart-user" class="text-center">MY CART</h4>
+                <div class="cart-product">
+                  <img src="./images/shoes-1.jpg" alt="shoes" />
+                  <div class="cart-contents">
+                    <span>Two tone brown leather shoes</span>
+                    <p class="text-small">Leather shoes</p>
+                  </div>
+                </div>
+
+                <div class="order-group offers flex-between-center">
+                  <label for="offers">Offers</label>
+                  <input
+                    type="text"
+                    id="offers"
+                    name="offers"
+                    placeholder="Add code"
+                  />
+                </div>
+
+                <span class="h6 text-center" id="order">ORDER DETAIL</span>
+                <section aria-labelledby="order" class="cart-order">
+                  <div class="order-group flex-between-center">
+                    <label for="qty">Qty</label>
+                    <input type="text" id="qty" name="qty" required />
+                  </div>
+                  <div class="order-group flex-between-center">
+                    <label for="size">Size</label>
+                    <input type="text" id="size" name="size" required />
+                  </div>
+                  <div class="order-group flex-between-center">
+                    <label for="delivery">Delivery</label>
+                    <input type="text" id="deliver" name="deliver" />
+                  </div>
+                  <div class="order-group flex-between-center">
+                    <label>Price</label>
+                    <input type="text" id="price" name="price" />
+                  </div>
+                </section>
+                <div class="order-group total flex-between-center">
+                  <span class="h6">TOTAL</span>
+                  <div class="total-price">$XXXXXX</div>
+                </div>
+              </article>
+              <div role="wrapper buttons" class="button-group">
+                <button class="button-medium button-accent">Check Out</button>
+                <button class="button-medium button-primary">
+                  Continue Shopping
+                </button>
+                <button class="button-medium button-delete">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="user-form-button">
+            <img src="./images/user.svg" alt="User form" title="User login" />
+          </button>
+          <div class="modal-user" id="user">
+            <div class="form-wrapper">
+              <button class="form-close-button">
+                <img src="./images/close.svg" alt="close" title="Close" />
+              </button>
+              <section
+                aria-labelledby="loginUser"
+                class="form-user login-form fadeIn"
+              >
+                <h4 id="loginUser" class="text-center">Hi, Welcome Back!</h4>
+                <form class="form" method="#">
+                  <div class="input-group">
+                    <label for="email">Your email</label>
+                    <input type="text" id="email" name="email" required />
+                  </div>
+                  <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" required />
+                  </div>
+                  <div class="flex-between-center">
+                    <div class="remember">
+                      <input
+                        type="checkbox"
+                        id="remember"
+                        name="remember"
+                        required
+                      />
+                      <label for="remember" class="text-small"
+                        >Remember me</label
+                      >
+                    </div>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                  </div>
+                  <div role="wrapper buttons" class="button-group">
+                    <button
+                      class="button-medium button-accent flex-center"
+                      type="submit"
+                    >
+                      Login
+                    </button>
+                    <p class="text-center text-small">Or</p>
+                    <a
+                      href="#"
+                      class="button-medium button-secondary flex-center"
+                    >
+                      <img src="./images/google.svg" alt="google" /> Login with
+                      Google
+                    </a>
+                    <p class="text-center text-small">
+                      Don't have an account ?
+                      <button type="button" class="form-link signup-link">
+                        Sign Up
+                      </button>
+                    </p>
+                  </div>
+                </form>
+              </section>
+
+              <section
+                aria-labelledby="signUp"
+                class="form-user signup-form fadeIn"
+              >
+                <h4 id="signUp" class="text-center">Create an account</h4>
+                <p class="text-center text-small">
+                  Sign up to create a new account
+                </p>
+                <form class="form" method="#">
+                  <div class="input-group">
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required />
+                  </div>
+                  <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" required />
+                  </div>
+                  <div class="input-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="text" id="confirm" name="confirm" required />
+                  </div>
+                  <div class="accept">
+                    <input type="checkbox" id="accept" name="accept" required />
+                    <label for="accept" class="text-small"
+                      >I accept all terms & condition</label
+                    >
+                  </div>
+                  <div role="wrapper buttons" class="button-group">
+                    <button
+                      class="button-medium button-accent flex-center"
+                      type="submit"
+                    >
+                      Sign Up
+                    </button>
+                    <p class="text-center text-small">Or</p>
+                    <a
+                      href="#"
+                      class="button-medium button-secondary flex-center"
+                    >
+                      <img src="./images/google.svg" alt="google" /> signup with
+                      Google
+                    </a>
+                    <p class="text-center text-small">
+                      Already have an account?
+                      <button type="button" class="form-link login-link">
+                        Login
+                      </button>
+                    </p>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+
+          <button class="nav__menu-btn">
+            <img src="./images/menu-btn.svg" alt="Menu button" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section aria-labelledby="home">
+        <div aria-label="wrapper content" class="wrapper-section home">
+          <article class="home__intro">
+            <div class="home__heading">
+              <h1 class="left">WHERE UNDISCOVERED</h1>
+              <br />
+              <span class="h1 right">ELEGANCE MEETS ELITE</span>
+            </div>
+            <form action="#" class="home__search">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">
+                <img src="./images/search.svg" alt="search" title="Search" />
+              </button>
+            </form>
+            <p class="text-center">
+              Find an eclectic curation of designs that catering to those who
+              crave the thrill of the undiscovered.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="showcase">
+        <div aria-label="wrapper content" class="wrapper-section new">
+          <article class="showcase__contents">
+            <h2 class="text-center" id="showcase">
+              Elevate your wardrobe with our new exclusive collection
+            </h2>
+
+            <div
+              aria-label="wrapper cards"
+              class="wrapper__cards flex-evenly-center wrap"
+            >
+              <div class="card">
+                <img
+                  src="./images/md-salman-tWOz2_EK5EQ-unsplash.jpg"
+                  alt="product"
+                  loading="lazy"
+                />
+                <span class="card__style button-small button-secondary"
+                  >t-shirt</span
+                >
+                <p class="card__caption">multi-colored t-shirts.</p>
+                <div class="card__price flex-between-center">
+                  <span class="h5">$24.99</span>
+                  <button class="button-medium button-accent">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./images/drake-s-takes-vKnRYW-mtek-unsplash.jpg"
+                  alt="product"
+                  loading="lazy"
+                />
+                <span class="card__style button-small button-secondary"
+                  >casual shirt</span
+                >
+                <p class="card__caption">printed dark brown casual shirt.</p>
+                <div class="card__price flex-between-center">
+                  <span class="h5">$74.99</span>
+                  <button class="button-medium button-accent">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./images/gregory-hayes-h5cd51KXmRQ-unsplash .jpg"
+                  alt="product"
+                  loading="lazy"
+                />
+                <span class="card__style button-small button-secondary"
+                  >work</span
+                >
+                <p class="card__caption">a brand new suit, shirt and tie.</p>
+                <div class="card__price flex-between-center">
+                  <span class="h5">$140.99</span>
+                  <button class="button-medium button-accent">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./images/shoes-1.jpg" alt="product" loading="lazy" />
+                <span class="card__style button-small button-secondary"
+                  >leather shoes</span
+                >
+                <p class="card__caption">two tone brown leather shoes.</p>
+                <div class="card__price flex-between-center">
+                  <span class="h5">$149.99</span>
+                  <button class="button-medium button-accent">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="collection">
+        <div aria-label="wrapper content" class="wrapper-section collection">
+          <article class="collection__contents">
+            <h2 class="text-center" id="collection">
+              We understand that fashion is a personal expression of individual
+              style, so we strive to provide a diverse range of option to suit
+              every taste and budget.
+            </h2>
+            <h3>SHOP BY ESSENTIAL</h3>
+            <ul class="tab__buttons flex wrap">
+              <li>
+                <button
+                  class="button-medium button-secondary active"
+                  data-tab-target="#new"
+                >
+                  New arrival
+                </button>
+              </li>
+              <li>
+                <button
+                  class="button-medium button-secondary"
+                  data-tab-target="#work"
+                >
+                  Works
+                </button>
+              </li>
+              <li>
+                <button
+                  class="button-medium button-secondary"
+                  data-tab-target="#casual"
+                >
+                  Casual outwear
+                </button>
+              </li>
+              <li>
+                <button
+                  class="button-medium button-secondary"
+                  data-tab-target="#tshirt"
+                >
+                  T-shirt
+                </button>
+              </li>
+              <li>
+                <button
+                  class="button-medium button-secondary"
+                  data-tab-target="#shoes"
+                >
+                  Shoes
+                </button>
+              </li>
+            </ul>
+
+            <article class="tab__contents">
+              <section
+                aria-labelledby="content1"
+                id="new"
+                class="tab__content active scaleOut"
+              >
+                <span class="h2 text-center" id="content1">New arrival</span>
+                <div
+                  aria-label="wrapper cards"
+                  class="wrapper__cards flex-evenly-center wrap"
+                >
+                  <div class="card">
+                    <img
+                      src="./images/md-salman-tWOz2_EK5EQ-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">multi-colored t-shirts.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/alex-haigh-fEt6Wd4t4j0-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/alex-perri-At__EKm5PGE-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">knitted red maroon jumper.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-blue-wall_158538-24057.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/drake-s-takes-vKnRYW-mtek-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >casual shirt</span
+                    >
+                    <p class="card__caption">
+                      printed dark brown casual shirt.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$74.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/gregory-hayes-h5cd51KXmRQ-unsplash .jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt and tie.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$140.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-1.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">two tone brown leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                aria-labelledby="content2"
+                id="work"
+                class="tab__content scaleOut"
+              >
+                <span class="h2 text-center" id="content2">Work</span>
+                <div
+                  aria-label="wrapper cards"
+                  class="wrapper__cards flex-evenly-center wrap"
+                >
+                  <div class="card">
+                    <img
+                      src="./images/gregory-hayes-h5cd51KXmRQ-unsplash .jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt and tie.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$140.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/benjamin-r-wSeGsdjltYw-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt and tie.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$140.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/benjamin-r-opJElA_rBNw-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt and tie.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$140.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/benjamin-r-SZoTel1Y4qc-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt and tie.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$140.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/benjamin-r-ItqFmSxKnIg-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt, tie, denim and leather shoes.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$340.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/nimble-made-7RIMS-NMsbc-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">a brand new shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$30.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/taylor-grote-rnH5ITofDAM-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >work</span
+                    >
+                    <p class="card__caption">
+                      a brand new suit, shirt, tie and long pants.
+                    </p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$190.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                aria-labelledby="content3"
+                id="casual"
+                class="tab__content scaleOut"
+              >
+                <span class="h2 text-center" id="content3">Casual Outwear</span>
+                <div
+                  aria-label="wrapper cards"
+                  class="wrapper__cards flex-evenly-center wrap"
+                >
+                  <div class="card">
+                    <img
+                      src="./images/alex-perri-At__EKm5PGE-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">knitted red maroon jumper</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-blue-wall_158538-24057.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/kirby-love-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/gelmis-bartulis-gzlfj8Fjdk0-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/force-majeure-a5-_X8IktJg-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/drake-s-takes-vKnRYW-mtek-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/adrien-king-amn3wfTkU_c-unsplash (1).jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >outwear</span
+                    >
+                    <p class="card__caption">casual outwear.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$32.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                aria-labelledby="content4"
+                id="tshirt"
+                class="tab__content scaleOut"
+              >
+                <span class="h2 text-center" id="content4">T-shirt</span>
+                <div
+                  aria-label="wrapper cards"
+                  class="wrapper__cards flex-evenly-center wrap"
+                >
+                  <div class="card">
+                    <img
+                      src="./images/md-salman-tWOz2_EK5EQ-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">multi-colored t-shirts.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/alex-haigh-fEt6Wd4t4j0-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/force-majeure-00tlC0Clfrs-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">two pair of white t-shirts.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$44.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./images/t2.JPG" alt="product" loading="lazy" />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./images/t3.png" alt="product" loading="lazy" />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./images/t4.png" alt="product" loading="lazy" />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./images/t5.png" alt="product" loading="lazy" />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">original t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/parker-burchfield-tvG4WvjgsEY-unsplash.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >t-shirt</span
+                    >
+                    <p class="card__caption">multi-colored t-shirt.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$24.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                aria-labelledby="content5"
+                id="shoes"
+                class="tab__content scaleOut shoes"
+              >
+                <span class="h2 text-center" id="content5">Shoes</span>
+                <div
+                  aria-label="wrapper cards"
+                  class="wrapper__cards flex-evenly-center wrap"
+                >
+                  <div class="card">
+                    <img
+                      src="./images/shoes-1.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">two tone brown leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-2.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">brown leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-3.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">black leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-4.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">black leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-5.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">brown leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-6.jpg"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >leather shoes</span
+                    >
+                    <p class="card__caption">brown leather shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-7.png"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >shoes</span
+                    >
+                    <p class="card__caption">two tone running shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$109.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./images/shoes-8.png"
+                      alt="product"
+                      loading="lazy"
+                    />
+                    <span class="card__style button-small button-secondary"
+                      >shoes</span
+                    >
+                    <p class="card__caption">white casual shoes.</p>
+                    <div class="card__price flex-between-center">
+                      <span class="h5">$149.99</span>
+                      <button class="button-medium button-accent">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="about" class="about__section">
+        <div aria-label="wrapper content" class="wrapper-section about">
+          <article class="about__contents">
+            <h2 class="text-center" id="about">
+              FASHION FORWARD STYLE ETERNAL
+            </h2>
+            <p class="about__caption text-center">
+              We deliver high-quality clothing at a reasonable price. Our main
+              focus is on what or costumer want to wear to work, event, meetings
+              and everyday duties. We hope that our efforts in the direction of
+              all costumer apparel will be fruitfull.
+            </p>
+            <h3 class="text-center">
+              SUBSCRIBE FOR EXCLUSIVE FASHION INSIGHTS
+            </h3>
+            <form class="about__form" action="#">
+              <input type="text" placeholder="Your email..." />
+              <button type="#" class="button-medium button-primary">
+                SUBSCRIBE NOW
+              </button>
+            </form>
+            <p>Follow Us</p>
+            <div class="about__media">
+              <a href="#" class="about__sosial"
+                ><img
+                  src="./images/facebook.svg"
+                  alt="facebook"
+                  title="facebook"
+              /></a>
+              <a href="#" class="about__sosial"
+                ><img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  title="instagram"
+              /></a>
+              <a href="#" class="about__sosial"
+                ><img
+                  src="./images/twitter-x.svg"
+                  alt="twiter-x"
+                  title="twiter-x"
+              /></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div aria-label="wrapper content" class="wrapper-section footer">
+        <section
+          aria-labelledby="contact"
+          class="footer__contents grid-item-center"
+        >
+          <h3 id="contact" class="text-center">
+            FEEL FREE TO GET IN TOUCH WITH US
+          </h3>
+          <button class="button button-accent contact-button">
+            Contact Us
+          </button>
+
+          <form class="footer__form fadeIn" method="#">
+            <div class="input-group">
+              <label for="yourName">Your name</label>
+              <input type="text" id="yourName" name="yourName" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Your email</label>
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div class="input-group">
+              <label for="message">Your message</label>
+              <textarea
+                id="message"
+                rows="6"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div
+              role="wrapper buttons"
+              class="contact-buttons flex-evenly-center"
+            >
+              <button class="button-medium button-accent">Send it</button>
+              <button class="button-medium button-secondary contact-close">
+                Close
+              </button>
+            </div>
+          </form>
+
+          <span class="logo">EXpreshop</span>
+        </section>
+
+        <div
+          aria-label="wrapper content"
+          class="footer__extra flex-between-center wrap"
+        >
+          <div class="footer__terms flex-between-center">
+            <a href="#"><p>Terms & Conditions</p></a>
+            <a href="#"><p>Privacy Policy</p></a>
+          </div>
+          <p>
+            &copy <span id="year"></span> | All rights reserved. | Made by :
+            Miko
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
