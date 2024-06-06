@@ -1042,7 +1042,7 @@ footer {
 
 .footer__extra {
   padding-block: clamp(var(--size-small), 2vw, var(--size-2-base));
-  border-top: var(--borderDark);
+  border-top: var(--borderLight);
 }
 
 .footer__terms {
@@ -1057,9 +1057,6 @@ footer {
   .form .form-forgot {
     margin-bottom: var(--size-base);
   }
-}
-
-@media (max-width: 768px) {
 }
 
 @media (max-width: 700px) {
