@@ -308,6 +308,7 @@ button:focus-visible {
 .button-primary {
   background-color: var(--darkBase);
   color: var(--lightPrimary);
+  border: var(--borderLight);
 }
 
 .button-secondary {
